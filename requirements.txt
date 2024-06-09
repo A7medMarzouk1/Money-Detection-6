@@ -1,7 +1,6 @@
 tensorflow
 Keras
 scikit-learn
-sklearn
 matplotlib 
 streamlit
 pillow

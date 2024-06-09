@@ -1,6 +1,6 @@
 tensorflow
 Keras
+matplotlib 
 streamlit
 pillow
 numpy
-Keras

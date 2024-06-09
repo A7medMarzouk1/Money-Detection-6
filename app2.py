@@ -31,7 +31,8 @@ uploaded_file = st.file_uploader("Choose an image", type=["jpg", "jpeg", "png"])
 if uploaded_file is not None:
     st.image(uploaded_file, caption='Uploaded Image.', use_column_width=True)
 
-    @st.cache(allow_output_mutation=True)
+
+    @st.cache_resource
     def load_model():
         model_path = "EGY_Currency_Detector_Acc_91.3%.h5"  # Change this to the path of your trained model
         model = tf.keras.models.load_model(model_path)
